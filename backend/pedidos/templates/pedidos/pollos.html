@@ -1,0 +1,301 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pollo Frisby</title>
+
+<link rel="stylesheet" href="{% static 'pedidos/css/style.css' %}">
+<link rel="stylesheet" href="{% static 'pedidos/css/hamburguesas.css' %}">
+<link rel="stylesheet" href="{% static 'pedidos/css/salchipapas.css' %}"> 
+
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<h1>🍗 Pollo Frisby</h1>
+
+<p class="frase">
+Escoge tu combo favorito
+</p>
+
+
+<!-- =========================
+     BOMBONES DE POLLO
+========================= -->
+
+<div class="categoria">
+
+    <div class="cabecera">
+
+        <div class="lado-izquierdo">
+
+            <span class="emoji">🍗</span>
+
+            <div class="datos">
+
+                <span class="nombre">
+                    Bombones de Pollo
+                </span>
+
+                <select class="tamano">
+
+                    <option value="35000">
+                        10 unidades
+                    </option>
+
+                    <option value="68000">
+                        20 unidades
+                    </option>
+
+                </select>
+
+                <span class="precio">
+                    $35.000
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="acciones">
+
+            <button class="btn-agregar">+</button>
+
+            <div class="contador" style="display:none;">
+
+                <button class="btn-menos">−</button>
+
+                <span class="cantidad">1</span>
+
+                <button class="btn-mas">+</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <button class="btn-info">
+        ▼ Ingredientes
+    </button>
+
+    <div class="ingredientes">
+
+        <p>• Bombones de pollo crujientes</p>
+        <p>• Porción de papas a la francesa</p>
+        <p>• 2 Salsas a elección (Verde, Rosada, BBQ, Miel Mostaza, Tropical, Búfalo)</p>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     COMBOS DE POLLO
+========================= -->
+
+<div class="categoria">
+
+    <div class="cabecera">
+
+        <div class="lado-izquierdo">
+
+            <span class="emoji">🍗</span>
+
+            <div class="datos">
+
+                <span class="nombre">
+                    Combos de Pollo
+                </span>
+
+                <select class="tamano">
+
+                    <option value="25000">
+                        Combo 1 (8 coditos)
+                    </option>
+
+                    <option value="27000">
+                        Combo 2 (4 coditos / 4 bombones)
+                    </option>
+
+                    <option value="52000">
+                        Combo 3 (9 coditos / 9 bombones)
+                    </option>
+
+                    <option value="72000">
+                        Combo 4 (12 coditos / 12 bombones)
+                    </option>
+
+                </select>
+
+                <span class="precio">
+                    $25.000
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="acciones">
+
+            <button class="btn-agregar">+</button>
+
+            <div class="contador" style="display:none;">
+
+                <button class="btn-menos">−</button>
+
+                <span class="cantidad">1</span>
+
+                <button class="btn-mas">+</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <button class="btn-info">
+        ▼ Ingredientes
+    </button>
+
+    <div class="ingredientes">
+
+        <p>• Piezas de pollo frito crujiente</p>
+        <p>• Porción de papas a la francesa</p>
+        <p>• 2 Salsas a elección</p>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     COMBOS MIXTOS
+========================= -->
+
+<div class="categoria">
+
+    <div class="cabecera">
+
+        <div class="lado-izquierdo">
+
+            <span class="emoji">🍖</span>
+
+            <div class="datos">
+
+                <span class="nombre">
+                    Combos Mixtos
+                </span>
+
+                <select class="tamano">
+
+                    <option value="25000">
+                        Combo 1 Mixto
+                    </option>
+
+                    <option value="55000">
+                        Combo 2 Mixto
+                    </option>
+
+                    <option value="75000">
+                        Combo 3 Mixto
+                    </option>
+
+                </select>
+
+                <span class="precio">
+                    $25.000
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="acciones">
+
+            <button class="btn-agregar">+</button>
+
+            <div class="contador" style="display:none;">
+
+                <button class="btn-menos">−</button>
+
+                <span class="cantidad">1</span>
+
+                <button class="btn-mas">+</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <button class="btn-info">
+        ▼ Ingredientes
+    </button>
+
+    <div class="ingredientes">
+
+        <p>• Piezas de pollo y costilla jugosa</p>
+        <p>• Porción de papas a la francesa</p>
+        <p>• 2 Salsas a elección</p>
+
+    </div>
+
+</div>
+
+
+</div>
+
+
+<!-- =========================
+     CARRITO FLOTANTE
+========================= -->
+
+<div class="carrito-flotante">
+
+    <button class="btn-carrito">
+
+        🛒
+
+        <span class="contador-carrito">
+            0
+        </span>
+
+    </button>
+
+
+    <div class="ventana-carrito">
+
+        <h2>🛒 Tu pedido</h2>
+
+        <div class="lista-carrito">
+        </div>
+
+        <div class="total-carrito">
+
+            Total: <span>$0</span>
+
+        </div>
+
+        <button class="btn-whatsapp">
+            Pedir por WhatsApp
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="{% static 'pedidos/js/salchipapas.js' %}"></script>
+
+</body>
+
+</html>

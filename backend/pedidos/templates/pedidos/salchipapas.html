@@ -1,0 +1,695 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Salchipapas</title>
+
+<link rel="stylesheet" href="{% static 'pedidos/css/style.css' %}">
+<link rel="stylesheet" href="{% static 'pedidos/css/hamburguesas.css' %}">
+<link rel="stylesheet" href="{% static 'pedidos/css/salchipapas.css' %}">   
+
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<h1>🍟 Salchipapas</h1>
+
+<p class="frase">
+Escoge tu salchipapa favorita
+</p>
+
+
+<!-- =========================
+     LA TUMBA RANCHO
+========================= -->
+
+<div class="categoria">
+
+    <div class="cabecera">
+
+        <div class="lado-izquierdo">
+
+            <span class="emoji">🍟</span>
+
+            <div class="datos">
+
+                <span class="nombre">
+                    La Tumba Rancho
+                </span>
+
+                <span class="precio">
+                    $160.000
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="acciones">
+
+            <button class="btn-agregar">+</button>
+
+            <div class="contador" style="display:none;">
+
+                <button class="btn-menos">−</button>
+
+                <span class="cantidad">1</span>
+
+                <button class="btn-mas">+</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <button class="btn-info">
+        ▼ Ingredientes
+    </button>
+
+    <div class="ingredientes">
+
+        <p>• Papa a la francesa</p>
+        <p>• Salchicha tradicional</p>
+        <p>• Cabello de ángel</p>
+        <p>• Jamón</p>
+        <p>• Chorizo en BBQ</p>
+        <p>• Costilla a la BBQ en finas hierbas</p>
+        <p>• Lluvia de queso</p>
+        <p>• Salsas de la casa</p>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     LA CONSENTIDA DE LA CASA
+========================= -->
+
+<div class="categoria">
+
+    <div class="cabecera">
+
+        <div class="lado-izquierdo">
+
+            <span class="emoji">🍟</span>
+
+            <div class="datos">
+
+                <span class="nombre">
+                    La Consentida de la Casa
+                </span>
+
+                <select class="tamano">
+
+                    <option value="35000">
+                        2 personas
+                    </option>
+
+                    <option value="65000">
+                        4 personas
+                    </option>
+
+                </select>
+
+                <span class="precio">
+                    $35.000
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="acciones">
+
+            <button class="btn-agregar">+</button>
+
+            <div class="contador" style="display:none;">
+
+                <button class="btn-menos">−</button>
+
+                <span class="cantidad">1</span>
+
+                <button class="btn-mas">+</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <button class="btn-info">
+        ▼ Ingredientes
+    </button>
+
+    <div class="ingredientes">
+
+        <p>• Papa a la francesa</p>
+        <p>• Salchicha tradicional</p>
+        <p>• Coditos</p>
+        <p>• Bombones Frisbi en salsa tropical</p>
+        <p>• Costilla</p>
+        <p>• Maicitos</p>
+        <p>• Salsas de la casa</p>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     LA TREMENDA
+========================= -->
+
+<div class="categoria">
+
+    <div class="cabecera">
+
+        <div class="lado-izquierdo">
+
+            <span class="emoji">🍟</span>
+
+            <div class="datos">
+
+                <span class="nombre">
+                    La Tremenda
+                </span>
+
+                <select class="tamano">
+
+                    <option value="45000">
+                        2 a 3 personas
+                    </option>
+
+                    <option value="80000">
+                        4 a 5 personas
+                    </option>
+
+                </select>
+
+                <span class="precio">
+                    $45.000
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="acciones">
+
+            <button class="btn-agregar">+</button>
+
+            <div class="contador" style="display:none;">
+
+                <button class="btn-menos">−</button>
+
+                <span class="cantidad">1</span>
+
+                <button class="btn-mas">+</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <button class="btn-info">
+        ▼ Ingredientes
+    </button>
+
+    <div class="ingredientes">
+
+        <p>• Papa criolla</p>
+        <p>• Batavia</p>
+        <p>• Tenders de pollo</p>
+        <p>• Chicharrón al barril</p>
+        <p>• Chorizo ranchero Berna</p>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     SALCHI EXÓTICA
+========================= -->
+
+<div class="categoria">
+
+    <div class="cabecera">
+
+        <div class="lado-izquierdo">
+
+            <span class="emoji">🍟</span>
+
+            <div class="datos">
+
+                <span class="nombre">
+                    Salchi Exótica
+                </span>
+
+                <select class="tamano">
+
+                    <option value="18000">
+                        Personal
+                    </option>
+
+                    <option value="33000">
+                        2 personas
+                    </option>
+
+                    <option value="55000">
+                        4 personas
+                    </option>
+
+                    <option value="70000">
+                        6 personas
+                    </option>
+
+                </select>
+
+                <span class="precio">
+                    $18.000
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="acciones">
+
+            <button class="btn-agregar">+</button>
+
+            <div class="contador" style="display:none;">
+
+                <button class="btn-menos">−</button>
+
+                <span class="cantidad">1</span>
+
+                <button class="btn-mas">+</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <button class="btn-info">
+        ▼ Ingredientes
+    </button>
+
+    <div class="ingredientes">
+
+        <p>• Papa a la francesa</p>
+        <p>• Salchicha tradicional</p>
+        <p>• Coditos a la BBQ</p>
+        <p>• Carne desmechada</p>
+        <p>• Costilla</p>
+        <p>• Guacamole</p>
+        <p>• Lechuga batavia</p>
+        <p>• Cabello de ángel</p>
+        <p>• Queso gratinado</p>
+        <p>• Salsas de la casa</p>
+
+    </div>
+
+</div>
+<!-- =========================
+     SALCHI PAISA
+========================= -->
+
+<div class="categoria">
+
+    <div class="cabecera">
+
+        <div class="lado-izquierdo">
+
+            <span class="emoji">🍟</span>
+
+            <div class="datos">
+
+                <span class="nombre">
+                    Salchi Paisa
+                </span>
+
+                <select class="tamano">
+
+                    <option value="18000">
+                        Personal
+                    </option>
+
+                    <option value="33000">
+                        2 personas
+                    </option>
+
+                    <option value="55000">
+                        4 personas
+                    </option>
+
+                    <option value="70000">
+                        6 personas
+                    </option>
+
+                </select>
+
+                <span class="precio">
+                    $18.000
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="acciones">
+
+            <button class="btn-agregar">+</button>
+
+            <div class="contador" style="display:none;">
+
+                <button class="btn-menos">−</button>
+
+                <span class="cantidad">1</span>
+
+                <button class="btn-mas">+</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <button class="btn-info">
+        ▼ Ingredientes
+    </button>
+
+    <div class="ingredientes">
+
+        <p>• Papa a la francesa</p>
+        <p>• Salchicha tradicional</p>
+        <p>• Chicharrón</p>
+        <p>• Chorizo</p>
+        <p>• Costilla</p>
+        <p>• Maduro</p>
+        <p>• Lechuga batavia</p>
+        <p>• Cabello de ángel</p>
+        <p>• Salsas de la casa</p>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     SALCHI FRISBI
+========================= -->
+
+<div class="categoria">
+
+    <div class="cabecera">
+
+        <div class="lado-izquierdo">
+
+            <span class="emoji">🍟</span>
+
+            <div class="datos">
+
+                <span class="nombre">
+                    Salchi Frisbi
+                </span>
+
+                <select class="tamano">
+
+                    <option value="17000">
+                        2 personas
+                    </option>
+
+                    <option value="30000">
+                        4 personas
+                    </option>
+
+                    <option value="55000">
+                        6 personas
+                    </option>
+
+                </select>
+
+                <span class="precio">
+                    $17.000
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="acciones">
+
+            <button class="btn-agregar">+</button>
+
+            <div class="contador" style="display:none;">
+
+                <button class="btn-menos">−</button>
+
+                <span class="cantidad">1</span>
+
+                <button class="btn-mas">+</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <button class="btn-info">
+        ▼ Ingredientes
+    </button>
+
+    <div class="ingredientes">
+
+        <p>• Papa a la francesa</p>
+        <p>• Salchicha tradicional</p>
+        <p>• Chorizo en salsa teriyaki</p>
+        <p>• Tocineta</p>
+        <p>• Tornados de pollo Frisbi</p>
+        <p>• Salsa de queso</p>
+        <p>• Cabello de ángel</p>
+        <p>• Salsas de la casa</p>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     SALCHI CARNE
+========================= -->
+
+<div class="categoria">
+
+    <div class="cabecera">
+
+        <div class="lado-izquierdo">
+
+            <span class="emoji">🍟</span>
+
+            <div class="datos">
+
+                <span class="nombre">
+                    Salchi Carne
+                </span>
+
+                <select class="tamano">
+
+                    <option value="17000">
+                        2 personas
+                    </option>
+
+                    <option value="30000">
+                        4 personas
+                    </option>
+
+                    <option value="65000">
+                        6 personas
+                    </option>
+
+                </select>
+
+                <span class="precio">
+                    $17.000
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="acciones">
+
+            <button class="btn-agregar">+</button>
+
+            <div class="contador" style="display:none;">
+
+                <button class="btn-menos">−</button>
+
+                <span class="cantidad">1</span>
+
+                <button class="btn-mas">+</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <button class="btn-info">
+        ▼ Ingredientes
+    </button>
+
+    <div class="ingredientes">
+
+        <p>• Papa a la francesa</p>
+        <p>• Salchicha tradicional</p>
+        <p>• Trozos de carne</p>
+        <p>• Croquetas de yuca</p>
+        <p>• Lechuga batavia</p>
+        <p>• Cabello de ángel</p>
+        <p>• Queso gratinado</p>
+        <p>• Salsas de la casa</p>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     MARINERA
+========================= -->
+
+<div class="categoria">
+
+    <div class="cabecera">
+
+        <div class="lado-izquierdo">
+
+            <span class="emoji">🍟</span>
+
+            <div class="datos">
+
+                <span class="nombre">
+                    Marinera
+                </span>
+
+                <select class="tamano">
+
+                    <option value="25000">
+                        Personal
+                    </option>
+
+                    <option value="45000">
+                        2 personas
+                    </option>
+
+                    <option value="70000">
+                        4 personas
+                    </option>
+
+                </select>
+
+                <span class="precio">
+                    $25.000
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="acciones">
+
+            <button class="btn-agregar">+</button>
+
+            <div class="contador" style="display:none;">
+
+                <button class="btn-menos">−</button>
+
+                <span class="cantidad">1</span>
+
+                <button class="btn-mas">+</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <button class="btn-info">
+        ▼ Ingredientes
+    </button>
+
+    <div class="ingredientes">
+
+        <p>• Papa a la francesa</p>
+        <p>• Salchicha tradicional</p>
+        <p>• Palmitos de cangrejo</p>
+        <p>• Camarones con salsa del Pacífico</p>
+        <p>• Lechuga batavia</p>
+        <p>• Salsa de la casa</p>
+
+    </div>
+
+</div>
+
+
+</div>
+
+
+<!-- =========================
+     CARRITO FLOTANTE
+========================= -->
+
+<div class="carrito-flotante">
+
+    <button class="btn-carrito">
+
+        🛒
+
+        <span class="contador-carrito">
+            0
+        </span>
+
+    </button>
+
+
+    <div class="ventana-carrito">
+
+        <h2>🛒 Tu pedido</h2>
+
+        <div class="lista-carrito">
+        </div>
+
+        <div class="total-carrito">
+
+            Total: <span>$0</span>
+
+        </div>
+
+        <button class="btn-whatsapp">
+            Pedir por WhatsApp
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="{% static 'pedidos/js/salchipapas.js' %}"></script>
+
+</body>
+
+</html>

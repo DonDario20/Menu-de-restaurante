@@ -1,0 +1,269 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Arial, sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    min-height:100vh;
+    padding:30px 15px;
+}
+
+.contenedor{
+    width:100%;
+    max-width:520px;
+}
+
+.logo{
+    width:90px;
+    display:block;
+    margin:0 auto 20px;
+}
+
+h1{
+    text-align:center;
+    color:#d62828;
+    font-size:42px;
+    margin-bottom:10px;
+}
+.subtitulo{
+    text-align: center;
+    color: #d62828;   /* mismo rojo del título */
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 8px;
+    margin-bottom: 40px;
+}   
+
+h2{
+    text-align:center;
+    color:#f4c542;
+    margin-bottom:25px;
+}
+
+.frase{
+    text-align:center;
+    color:#cfcfcf;
+    font-size:20px;
+    margin-bottom:30px;
+}/* ===========================
+   BOTÓN HACER PEDIDO
+=========================== */
+
+.contenedor-boton{
+
+    display:flex;
+    justify-content:center;
+
+    margin-top:40px;
+
+}
+
+.boton{
+
+    display:inline-block;
+
+    padding:16px 42px;
+
+    background:#d62828;
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:14px;
+
+    font-size:20px;
+    font-weight:bold;
+
+    transition:.25s;
+
+    box-shadow:0 8px 20px rgba(214,40,40,.35);
+
+}
+
+.boton:hover{
+
+    background:#ff4040;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(214,40,40,.45);
+
+}
+
+/* =========================
+   CARRITO FLOTANTE
+========================= */
+
+.carrito-flotante{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    z-index:1000;
+}
+
+/* Botón redondo del carrito */
+
+.btn-carrito{
+    width:65px;
+    height:65px;
+
+    border:none;
+    border-radius:50%;
+
+    background:#d62828;
+    color:white;
+
+    font-size:30px;
+    cursor:pointer;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.5);
+
+    transition:.25s;
+}
+
+.btn-carrito:hover{
+    transform:scale(1.08);
+    background:#ef3030;
+}
+
+/* Número de productos */
+
+.contador-carrito{
+    position:absolute;
+
+    top:-5px;
+    right:-5px;
+
+    min-width:25px;
+    height:25px;
+
+    padding:3px 7px;
+
+    background:#f4c542;
+    color:#111;
+
+    border-radius:20px;
+
+    font-size:14px;
+    font-weight:bold;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* Ventana del carrito */
+
+.ventana-carrito{
+    display:none;
+
+    position:absolute;
+
+    right:0;
+    bottom:80px;
+
+    width:330px;
+
+    background:#1d1d1d;
+
+    border:1px solid #333;
+    border-radius:18px;
+
+    padding:22px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.6);
+}
+
+/* Título */
+
+.ventana-carrito h2{
+    margin:0 0 20px;
+
+    color:#f4c542;
+
+    font-size:24px;
+}
+
+/* Productos */
+
+.lista-carrito{
+    max-height:250px;
+    overflow-y:auto;
+
+    margin-bottom:18px;
+}
+
+.lista-carrito p{
+    padding:10px 0;
+
+    border-bottom:1px solid #333;
+
+    color:#eee;
+
+    font-size:15px;
+}
+
+/* Total */
+
+.total-carrito{
+    text-align:center;
+
+    font-size:22px;
+    font-weight:bold;
+
+    color:white;
+
+    margin:18px 0;
+}
+
+/* Botón WhatsApp */
+
+.btn-whatsapp{
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+    border-radius:12px;
+
+    background:#25d366;
+    color:white;
+
+    font-size:16px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.25s;
+}
+
+.btn-whatsapp:hover{
+    background:#20bd5a;
+    transform:translateY(-2px);
+}
+
+/* =========================
+   CARRITO EN CELULAR
+========================= */
+
+@media(max-width:600px){
+
+    .carrito-flotante{
+        right:18px;
+        bottom:18px;
+    }
+
+    .ventana-carrito{
+        width:calc(100vw - 36px);
+
+        right:-5px;
+    }
+
+} 

@@ -1,0 +1,489 @@
+/* ===========================
+   TARJETA DE HAMBURGUESAS
+=========================== */
+
+.categoria{
+
+    background:#1d1d1d;
+    border:1px solid #333;
+    border-radius:18px;
+
+    padding:22px;
+    margin-bottom:22px;
+
+    transition:.25s;
+
+}
+
+.categoria:hover{
+
+    border-color:#d62828;
+    transform:translateY(-4px);
+
+}
+
+/* ===========================
+   CABECERA
+=========================== */
+
+.cabecera{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+.lado-izquierdo{
+
+    display:flex;
+    align-items:center;
+    gap:18px;
+    flex:1;
+
+}
+
+.emoji{
+
+    font-size:48px;
+
+}
+
+.datos{
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+.nombre{
+
+    color:white;
+    font-size:28px;
+    font-weight:700;
+    line-height:1.2;
+    margin-bottom:8px;
+
+}
+
+.precio{
+
+    color:#f4c542;
+    font-size:24px;
+    font-weight:bold;
+
+}
+
+/* ===========================
+   BOTÓN +
+=========================== */
+
+.btn-agregar{
+
+    width:64px;
+    height:64px;
+
+    border:none;
+    border-radius:50%;
+
+    background:#d62828;
+    color:white;
+
+    font-size:40px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    transition:.25s;
+
+}
+
+.btn-agregar:hover{
+
+    background:#ff4040;
+    transform:scale(1.08);
+
+}
+
+/* ===========================
+   BOTÓN INGREDIENTES
+=========================== */
+
+.btn-info{
+
+    width:100%;
+
+    margin-top:20px;
+    padding:15px;
+
+    background:#292929;
+
+    border:none;
+    border-radius:14px;
+
+    color:#f4c542;
+
+    font-size:18px;
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.btn-info:hover{
+
+    background:#353535;
+    color:white;
+
+}
+
+/* ===========================
+   INGREDIENTES
+=========================== */
+
+.ingredientes{
+
+    display:none;
+
+    margin-top:18px;
+
+    padding:22px;
+
+    background:#181818;
+
+    border-left:5px solid #d62828;
+    border-radius:14px;
+
+    animation:aparecer .25s ease;
+
+}
+
+.ingredientes p{
+
+    position:relative;
+
+    color:#dddddd;
+
+    padding-left:28px;
+
+    margin-bottom:14px;
+
+    line-height:1.7;
+
+    font-size:17px;
+
+}
+
+.ingredientes p:last-child{
+
+    margin-bottom:0;
+
+}
+
+.ingredientes p::before{
+
+    content:"✓";
+
+    position:absolute;
+
+    left:0;
+    top:0;
+
+    color:#2ecc71;
+
+    font-weight:bold;
+
+}
+
+/* ===========================
+   ANIMACIÓN
+=========================== */
+
+@keyframes aparecer{
+
+    from{
+
+        opacity:0;
+        transform:translateY(-8px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+/* ===========================
+   ACCIONES
+=========================== */
+
+.acciones{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* Botón inicial */
+
+.btn-agregar{
+
+    width:60px;
+    height:60px;
+
+    border:none;
+    border-radius:50%;
+
+    background:#d62828;
+    color:white;
+
+    font-size:36px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.btn-agregar:hover{
+
+    background:#ff4040;
+    transform:scale(1.08);
+
+}
+
+/* Contador */
+
+.contador{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+}
+
+.btn-menos,
+.btn-mas{
+
+    width:42px;
+    height:42px;
+
+    border:none;
+    border-radius:50%;
+
+    font-size:26px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.btn-menos{
+
+    background:#555;
+    color:white;
+
+}
+
+.btn-menos:hover{
+
+    background:#777;
+
+}
+
+.btn-mas{
+
+    background:#d62828;
+    color:white;
+
+}
+
+.btn-mas:hover{
+
+    background:#ff4040;
+
+}
+
+.cantidad{
+
+    min-width:25px;
+
+    text-align:center;
+
+    color:white;
+
+    font-size:22px;
+    font-weight:bold;
+
+}
+/* ===========================
+   CARRITO FLOTANTE
+=========================== */
+
+.carrito-flotante{
+
+    position:fixed;
+
+    bottom:25px;
+    right:25px;
+
+    z-index:999;
+
+}
+
+.btn-carrito{
+
+    width:75px;
+    height:75px;
+
+    border:none;
+    border-radius:50%;
+
+    background:#d62828;
+
+    color:white;
+
+    font-size:32px;
+
+    cursor:pointer;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.45);
+
+    transition:.25s;
+
+    position:relative;
+
+}
+
+.btn-carrito:hover{
+
+    transform:scale(1.08);
+
+    background:#ff3b3b;
+
+}
+
+.contador-carrito{
+
+    position:absolute;
+
+    top:-6px;
+    right:-6px;
+
+    width:28px;
+    height:28px;
+
+    background:#f4c542;
+
+    color:#111;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:15px;
+    font-weight:bold;
+
+}
+/*==========================
+VENTANA CARRITO
+===========================*/
+
+.ventana-carrito{
+
+    position:fixed;
+
+    bottom:110px;
+    right:30px;
+
+    width:340px;
+
+    background:#1f1f1f;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    display:none;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.45);
+
+    z-index:999;
+
+}
+
+.ventana-carrito h2{
+
+    text-align:center;
+    color:#f4c542;
+
+    margin-bottom:20px;
+
+}
+
+.lista-carrito{
+
+    max-height:250px;
+
+    overflow-y:auto;
+
+    margin-bottom:20px;
+
+}
+
+.total-carrito{
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    color:#fff;
+
+    text-align:center;
+
+    margin-bottom:18px;
+
+}
+
+.btn-whatsapp{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#25D366;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.btn-whatsapp:hover{
+
+    transform:scale(1.03);
+
+}

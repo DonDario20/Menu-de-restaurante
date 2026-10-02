@@ -1,0 +1,50 @@
+<style>
+    .footer-redes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        margin: 40px auto 20px auto;
+        padding: 10px 0;
+        position: relative;
+        z-index: 10;
+    }
+
+    .btn-red {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #222222;
+        color: #ffffff !important;
+        font-size: 24px;
+        text-decoration: none;
+        border: 2px solid #333333;
+        transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .btn-red.instagram:hover {
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        border-color: transparent;
+        transform: scale(1.1);
+    }
+
+    .btn-red.tiktok:hover {
+        background-color: #000000;
+        border-color: #00f2fe;
+        transform: scale(1.1);
+    }
+</style>
+
+<div class="footer-redes">
+    <!-- Reemplaza las URL con tus perfiles -->
+    <a href="https://www.instagram.com/" target="_blank" class="btn-red instagram" title="Instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.tiktok.com/" target="_blank" class="btn-red tiktok" title="TikTok">
+        <i class="fab fa-tiktok"></i>
+    </a>
+</div>

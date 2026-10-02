@@ -1,0 +1,311 @@
+/* =========================================
+   SALCHIPAPAS
+========================================= */
+
+body {
+    background: #0f0f0f;
+}
+
+/* Contenedor principal */
+
+.contenedor {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px 20px 120px;
+}
+
+/* Título */
+
+.contenedor h1 {
+    text-align: center;
+    color: #e52b2b;
+    font-size: 42px;
+    margin-bottom: 8px;
+}
+
+.frase {
+    text-align: center;
+    color: #ddd;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+/* =========================================
+   TARJETAS
+========================================= */
+
+.categoria {
+    background: #1c1c1c;
+    border: 1px solid #333;
+    border-radius: 18px;
+    padding: 22px;
+    margin-bottom: 20px;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+/* Efecto al pasar el mouse */
+
+.categoria:hover {
+    transform: translateY(-3px);
+    border-color: #e52b2b;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+}
+
+/* =========================================
+   CABECERA
+========================================= */
+
+.cabecera {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.lado-izquierdo {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    min-width: 0;
+}
+
+.emoji {
+    font-size: 45px;
+    flex-shrink: 0;
+}
+
+.datos {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+/* Nombre */
+
+.nombre {
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+/* Precio */
+
+.precio {
+    color: #ffc928;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* =========================================
+   SELECTOR DE TAMAÑO
+========================================= */
+.tamano {
+    width: 180px;
+    padding: 9px 12px;
+
+    background: #292929;
+    color: #ffc928;
+
+    border: 1px solid #555;
+    border-radius: 9px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    appearance: auto;
+}
+
+.tamano:hover {
+    border-color: #ffc928;
+}
+
+.tamano:focus {
+    outline: none;
+    border-color: #e52b2b;
+    box-shadow: 0 0 0 2px rgba(229, 43, 43, 0.2);
+}
+
+.tamano option {
+    background: #292929;
+    color: white;
+}
+
+/* =========================================
+   BOTONES + Y -
+========================================= */
+
+.acciones {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.btn-agregar,
+.btn-mas,
+.btn-menos {
+    width: 48px;
+    height: 48px;
+
+    border: none;
+    border-radius: 50%;
+
+    font-size: 28px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.15s ease,
+        background 0.15s ease;
+}
+
+.btn-agregar,
+.btn-mas {
+    background: #e52b2b;
+    color: white;
+}
+
+.btn-menos {
+    background: #555;
+    color: white;
+}
+
+.btn-agregar:hover,
+.btn-mas:hover {
+    background: #ff3838;
+    transform: scale(1.08);
+}
+
+.btn-menos:hover {
+    background: #666;
+    transform: scale(1.08);
+}
+
+/* Contador */
+
+.contador {
+    align-items: center;
+    gap: 12px;
+}
+
+.cantidad {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    min-width: 20px;
+    text-align: center;
+}
+
+/* =========================================
+   BOTÓN INGREDIENTES
+========================================= */
+
+.btn-info {
+    width: 100%;
+
+    margin-top: 20px;
+    padding: 13px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #292929;
+    color: #ffc928;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: background 0.2s ease;
+}
+
+.btn-info:hover {
+    background: #333;
+}
+
+/* =========================================
+   INGREDIENTES
+========================================= */
+
+.ingredientes {
+    display: none;
+
+    margin-top: 12px;
+    padding: 15px 20px;
+
+    background: #151515;
+
+    border-radius: 12px;
+
+    border-left: 3px solid #ffc928;
+}
+
+.ingredientes p {
+    color: #ddd;
+    margin: 7px 0;
+    font-size: 15px;
+}
+
+/* =========================================
+   RESPONSIVE CELULAR
+========================================= */
+
+@media (max-width: 600px) {
+
+    .contenedor {
+        padding: 20px 12px 120px;
+    }
+
+    .contenedor h1 {
+        font-size: 32px;
+    }
+
+    .frase {
+        font-size: 16px;
+    }
+
+    .categoria {
+        padding: 16px;
+        border-radius: 15px;
+    }
+
+    .emoji {
+        font-size: 38px;
+    }
+
+    .nombre {
+        font-size: 19px;
+    }
+
+    .precio {
+        font-size: 18px;
+    }
+
+    .tamano {
+        width: 170px;
+    }
+
+    .btn-agregar,
+    .btn-mas,
+    .btn-menos {
+        width: 42px;
+        height: 42px;
+        font-size: 23px;
+    }
+
+    .cabecera {
+        gap: 8px;
+    }
+
+    .lado-izquierdo {
+        gap: 10px;
+    }
+}

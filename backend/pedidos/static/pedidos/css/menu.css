@@ -1,0 +1,48 @@
+.menu{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.categoria{
+    background:#1d1d1d;
+    border:1px solid #333;
+    border-radius:18px;
+
+    padding:20px 24px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    text-decoration:none;
+    color:white;
+
+    transition:.25s;
+}
+
+.categoria:hover{
+    background:#252525;
+    border-color:#d62828;
+    transform:translateY(-3px);
+}
+
+.lado-izquierdo{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.emoji{
+    font-size:42px;
+}
+
+.nombre{
+    font-size:26px;
+    font-weight:700;
+}
+
+.flecha{
+    font-size:32px;
+    color:#f4c542;
+}

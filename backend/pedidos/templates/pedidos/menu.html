@@ -1,0 +1,71 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Las Delicias de Media Noche</title>
+
+<link rel="stylesheet" href="{% static 'pedidos/css/style.css' %}">
+<link rel="stylesheet" href="{% static 'pedidos/css/menu.css' %}">
+
+</head>
+
+<body>
+
+<div class="contenedor">
+
+    <img src="{% static 'pedidos/img/logo.png' %}" class="logo">
+
+    <h1>Las Delicias</h1>
+
+    <p class="subtitulo">de Media Noche</p>
+
+    <p class="frase">
+        Selecciona una categoría
+    </p>
+
+    <div class="menu">
+
+        <a href="{% url 'hamburguesas' %}" class="categoria">
+            <span class="emoji">🍔</span>
+            <span class="nombre">Hamburguesas</span>
+            <span class="flecha">›</span>
+        </a>
+
+        <a href="{% url 'perros' %}" class="categoria">
+            <span class="emoji">🌭</span>
+            <span class="nombre">Perros</span>
+            <span class="flecha">›</span>
+        </a>
+
+        <a href="{% url 'salchipapas' %}" class="categoria">
+            <span class="emoji">🍟</span>
+            <span class="nombre">Salchipapas</span>
+            <span class="flecha">›</span>
+        </a>
+
+        <a href="{% url 'pollos' %}" class="categoria">
+            <span class="emoji">🍗</span>
+            <span class="nombre">Pollo Frisby</span>
+            <span class="flecha">›</span>
+        </a>
+
+        <div class="categoria">
+            <span class="emoji">🥩</span>
+            <span class="nombre">Picadas</span>
+            <span class="flecha">›</span>
+        </div>
+
+    </div>
+
+    <!-- Incluimos las redes sociales -->
+    {% include 'pedidos/redes_sociales.html' %}
+
+</div>
+
+</body>
+</html>

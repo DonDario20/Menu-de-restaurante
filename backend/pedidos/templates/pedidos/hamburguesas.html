@@ -1,0 +1,542 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hamburguesas</title>
+
+<link rel="stylesheet" href="{% static 'pedidos/css/style.css' %}">
+<link rel="stylesheet" href="{% static 'pedidos/css/hamburguesas.css' %}">
+
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<h1>🍔 Hamburguesas</h1>
+
+<p class="frase">
+Escoge tu hamburguesa favorita
+</p>
+<!-- PACÍFICO -->
+
+<div class="categoria">
+
+    <div class="cabecera">
+
+        <div class="lado-izquierdo">
+
+            <span class="emoji">🍔</span>
+
+            <div class="datos">
+
+                <span class="nombre">
+                    Hamburguesa del Pacífico
+                </span>
+
+                <span class="precio">
+                    $25.000
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="acciones">
+
+            <button class="btn-agregar">+</button>
+
+            <div class="contador" style="display:none;">
+
+                <button class="btn-menos">−</button>
+
+                <span class="cantidad">1</span>
+
+                <button class="btn-mas">+</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <button class="btn-info">
+        ▼ Ingredientes
+    </button>
+
+    <div class="ingredientes">
+
+        <p>• Pan brioche</p>
+        <p>• Vegetales frescos</p>
+        <p>• Carne artesanal</p>
+        <p>• Camarones en salsa del Pacífico</p>
+        <p>• Palmitos de cangrejo</p>
+
+    </div>
+
+</div>
+
+<!-- TORRE EIFFEL -->
+
+<div class="categoria">
+
+    <div class="cabecera">
+
+        <div class="lado-izquierdo">
+
+            <span class="emoji">🍔</span>
+
+            <div class="datos">
+
+                <span class="nombre">
+                    Torre Eiffel
+                </span>
+
+                <span class="precio">
+                    $23.000
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="acciones">
+
+            <button class="btn-agregar">+</button>
+
+            <div class="contador" style="display:none;">
+
+                <button class="btn-menos">−</button>
+
+                <span class="cantidad">1</span>
+
+                <button class="btn-mas">+</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <button class="btn-info">
+        ▼ Ingredientes
+    </button>
+
+    <div class="ingredientes">
+
+        <p>• Pan brioche</p>
+        <p>• Vegetales</p>
+        <p>• 2 carnes artesanales</p>
+        <p>• Bañada en salsa de queso</p>
+        <p>• Salsas de la casa</p>
+
+    </div>
+
+</div>
+
+<!-- HAMBURGUESA MIXTA -->
+
+<div class="categoria">
+
+    <div class="cabecera">
+
+        <div class="lado-izquierdo">
+
+            <span class="emoji">🍔</span>
+
+            <div class="datos">
+
+                <span class="nombre">
+                    Hamburguesa Mixta
+                </span>
+
+                <span class="precio">
+                    $25.000
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="acciones">
+
+            <button class="btn-agregar">+</button>
+
+            <div class="contador" style="display:none;">
+
+                <button class="btn-menos">−</button>
+
+                <span class="cantidad">1</span>
+
+                <button class="btn-mas">+</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <button class="btn-info">
+        ▼ Ingredientes
+    </button>
+
+    <div class="ingredientes">
+
+        <p>• Pan brioche</p>
+        <p>• Vegetales</p>
+        <p>• Pollo Frisbi</p>
+        <p>• Carne artesanal</p>
+        <p>• Salsa de queso</p>
+        <p>• Salsas de la casa</p>
+
+    </div>
+
+</div>
+<!-- KING KONG -->
+
+<div class="categoria">
+
+    <div class="cabecera">
+
+        <div class="lado-izquierdo">
+
+            <span class="emoji">🍔</span>
+
+            <div class="datos">
+
+                <span class="nombre">
+                    King Kong Burguer
+                </span>
+
+                <span class="precio">
+                    $30.000
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="acciones">
+
+            <button class="btn-agregar">+</button>
+
+            <div class="contador" style="display:none;">
+
+                <button class="btn-menos">−</button>
+
+                <span class="cantidad">1</span>
+
+                <button class="btn-mas">+</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <button class="btn-info">
+        ▼ Ingredientes
+    </button>
+
+    <div class="ingredientes">
+
+        <p>• Pan brioche</p>
+        <p>• Vegetales</p>
+        <p>• Tocineta</p>
+        <p>• 3 carnes artesanales</p>
+        <p>• Salsa de queso</p>
+        <p>• Salsas de la casa</p>
+
+    </div>
+
+</div>
+
+<!-- HAMBURGUESA FRISBI -->
+
+<div class="categoria">
+
+    <div class="cabecera">
+
+        <div class="lado-izquierdo">
+
+            <span class="emoji">🍔</span>
+
+            <div class="datos">
+
+                <span class="nombre">
+                    Hamburguesa Frisbi
+                </span>
+
+                <span class="precio">
+                    $18.000
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="acciones">
+
+            <button class="btn-agregar">+</button>
+
+            <div class="contador" style="display:none;">
+
+                <button class="btn-menos">−</button>
+
+                <span class="cantidad">1</span>
+
+                <button class="btn-mas">+</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <button class="btn-info">
+        ▼ Ingredientes
+    </button>
+
+    <div class="ingredientes">
+
+        <p>• Pan brioche</p>
+        <p>• Vegetales</p>
+        <p>• Pollo Frisbi</p>
+        <p>• Tocineta</p>
+        <p>• Salsa de queso</p>
+        <p>• Salsas de la casa</p>
+
+    </div>
+
+</div>
+
+<!-- HAMBURGUESA PAISA -->
+
+<div class="categoria">
+
+    <div class="cabecera">
+
+        <div class="lado-izquierdo">
+
+            <span class="emoji">🍔</span>
+
+            <div class="datos">
+
+                <span class="nombre">
+                    Hamburguesa Paisa
+                </span>
+
+                <span class="precio">
+                    $25.000
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="acciones">
+
+            <button class="btn-agregar">+</button>
+
+            <div class="contador" style="display:none;">
+
+                <button class="btn-menos">−</button>
+
+                <span class="cantidad">1</span>
+
+                <button class="btn-mas">+</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <button class="btn-info">
+        ▼ Ingredientes
+    </button>
+
+    <div class="ingredientes">
+
+        <p>• Pan brioche</p>
+        <p>• Carne artesanal</p>
+        <p>• Guacamole</p>
+        <p>• Maduro</p>
+        <p>• Costilla</p>
+        <p>• Chorizo</p>
+        <p>• Chicharrón</p>
+        <p>• Vegetales</p>
+        <p>• Salsa de la casa</p>
+
+    </div>
+
+</div>
+<!-- HAMBURGUESA ERICK -->
+
+<div class="categoria">
+
+    <div class="cabecera">
+
+        <div class="lado-izquierdo">
+
+            <span class="emoji">🍔</span>
+
+            <div class="datos">
+
+                <span class="nombre">
+                    Hamburguesa Erick
+                </span>
+
+                <span class="precio">
+                    $18.000
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="acciones">
+
+            <button class="btn-agregar">+</button>
+
+            <div class="contador" style="display:none;">
+
+                <button class="btn-menos">−</button>
+
+                <span class="cantidad">1</span>
+
+                <button class="btn-mas">+</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <button class="btn-info">
+        ▼ Ingredientes
+    </button>
+
+    <div class="ingredientes">
+
+        <p>• Pan brioche</p>
+        <p>• Carne artesanal</p>
+        <p>• Vegetales</p>
+        <p>• Tocineta</p>
+        <p>• Queso doble crema</p>
+        <p>• Queso cheddar</p>
+        <p>• Salsa de queso</p>
+        <p>• Cebolla caramelizada</p>
+        <p>• Salsas de la casa</p>
+
+    </div>
+
+</div>
+<!-- HAMBURGUESA PREMIUM -->
+
+<div class="categoria">
+
+    <div class="cabecera">
+
+        <div class="lado-izquierdo">
+
+            <span class="emoji">🍔</span>
+
+            <div class="datos">
+
+                <span class="nombre">
+                    Hamburguesa Premium
+                </span>
+
+                <span class="precio">
+                    $23.000
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="acciones">
+
+            <button class="btn-agregar">+</button>
+
+            <div class="contador" style="display:none;">
+
+                <button class="btn-menos">−</button>
+
+                <span class="cantidad">1</span>
+
+                <button class="btn-mas">+</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <button class="btn-info">
+        ▼ Ingredientes
+    </button>
+
+    <div class="ingredientes">
+
+        <p>• Pan brioche</p>
+        <p>• Carne artesanal de 260 g</p>
+        <p>• Vegetales</p>
+        <p>• Salsa de la casa</p>
+        <p>• Cebolla fresca</p>
+        <p>• Cebolla frita</p>
+        <p>• Tocineta</p>
+
+    </div>
+
+</div>
+
+    <!-- REDES SOCIALES (Centradas al final de la lista) -->
+    {% include 'pedidos/redes_sociales.html' %}
+
+</div> <!-- Cierre del <div class="contenedor"> -->
+
+
+<!-- ==========================
+     CARRITO FLOTANTE Y VENTANA
+========================== -->
+
+<div class="carrito-flotante">
+
+    <button class="btn-carrito">
+        🛒
+        <span class="contador-carrito">
+            0
+        </span>
+    </button>
+
+    <div class="ventana-carrito">
+
+        <h2>🛒 Tu pedido</h2>
+
+        <div class="lista-carrito">
+        </div>
+
+        <div class="total-carrito">
+            Total: <span>$0</span>
+        </div>
+
+        <button class="btn-whatsapp">
+            Pedir por WhatsApp
+        </button>
+
+    </div>
+
+</div>
+
+<script src="{% static 'pedidos/js/hamburguesas.js' %}"></script>
+
+</body>
+</html>
